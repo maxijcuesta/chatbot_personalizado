@@ -1,0 +1,54 @@
+
+
+Maximiliano Cuesta
+Data Scientist & AI Specialist
+cmaxi14.87@gmail.com
+Introducción
+•Resumen Profesional: Como Analista de Sistemas con un fuerte interés 
+en el ��rea de Datos, busco integrarme a un equipo dinámico donde pueda 
+aportar mi experiencia y aprender en roles de Data Science o afines. Soy 
+una persona tranquila, paciente y estructurada, con habilidades 
+destacadas en persistencia, trabajo en equipo, adaptabilidad, pensamiento 
+crítico, autonomía, escucha activa y responsabilidad.
+En mi trabajo actual, he desarrollado y optimizado diversas aplicaciones 
+utilizando Python, contribuyendo significativamente a la eficiencia operativa. 
+Mi enfoque es contribuir al éxito del equipo mediante soluciones efectivas, 
+siempre orientado a metas ambiciosas.
+Busco oportunidades para crecer y aplicar mis conocimientos en proyectos 
+desafiantes, donde la excelencia técnica y las habilidades blandas converjan 
+para alcanzar el éxito colectivo. Estoy comprometido con la mejora continua 
+y dispuesto a enfrentar nuevos retos que impulsen tanto mi desarrollo 
+profesional como el de la organización.
+Experiencia Profesional
+•Operador de Centro de Control de Energia- SCPL (10/2007 - Presente)
+•Responsabilidades:
+Coordinar, supervisar y controlar el estado del sistema eléctrico local, 
+garantizando el cumplimiento de condiciones preestablecidas. Mi experiencia 
+incluye la operación de equipamientos de media y alta tensión, así como 
+
+elaborar informes estadísticos para evaluar y mejorar el rendimiento del 
+sistema. Estos informes son presentados a la gerencia eléctrica para
+respaldar decisiones estratégicas. Mi compromiso con la excelencia 
+operativa y habilidades analíticas han sido fundamentales para el éxito en el 
+sector eléctrico.
+Educación
+•Analista de Sistemas -Universidad Siglo XXI (2021)
+•Certificaciones:
+•Cientifico de Datos -Instituto Platzi (2023)
+Habilidades
+•Lenguajes de Programación: Python
+•Tecnologías y Herramientas: Pandas, Numpy, Matplotlib, Seaborn, Scikit-
+Learn, MySQL, PostgreSQL, Tableau
+•Habilidades Blandas: persistencia, trabajo en equipo, adaptabilidad, 
+pensamiento crítico, autonomía, escucha activa y responsabilidad
+•Idiomas: Ingles (Basico)
+Proyectos Relevantes
+•Data Scientist - <Análisis de los 25 retailers más grandes de EEUU>
+•Descripción: El objetivo de este proyecto fue el análisis de las 25 
+empresas de retailers para importante de EEUU.
+•Rol: Analista de Datos.
+•Tecnologías Utilizadas: Python, Pandas, Numpy, Matplotlib, Seaborn
+•Enlace: https://deepnote.com/workspace/maxijcuesta-24f98f3d-
+b68b-4750-a177-2dad5d8adf8a/project/Proyecto-
+Datacademy-5593b676-2bb4-4c09-8c9b-d62f660cc966/notebook/
+115d016c8c6a4232af6b62f506d8f4

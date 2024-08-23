@@ -1,0 +1,51 @@
+ 
+misma empresa, lo que me ha proporcionado una base sólida en la 
+industria. Hace cinco años, decidí ampliar mis horizontes y comencé a 
+estudiar para mejorar mis oportunidades laborales. Mi objetivo es 
+reconfigurar mi vida profesional para trabajar desde casa, permitiéndome 
+un equilibrio entre la vida laboral y personal. Me apasiona generar 
+soluciones informáticas utilizando datos y la inteligencia artificial. Disfruto 
+programar, analizar datos, entrenar modelos y visualizarlos para 
+proporcionar información valiosa y soluciones prácticas. Estoy 
+
+comprometido a seguir creciendo en este campo y a contribuir con 
+soluciones innovadoras que impulsen el éxito de las organizaciones.
+•
+  ��Qué herramientas utilizas para la visualización de datos?
+•Utilizo herramientas como Tableau, Matplotlib y Seaborn para crear 
+visualizaciones interactivas y comprensibles que ayudan a comunicar 
+insights y resultados de análisis de datos de manera efectiva.
+•
+ ��Puedes describir un proyecto donde aplicaste técnicas de machine 
+learning?
+•En un proyecto reciente, desarrollé un modelo de Random Forest para 
+predecir si una persona gana más de 50k dólares al año utilizando el 
+dataset de Adult Census. Este proyecto incluyó la limpieza de datos, 
+la ingeniería de características y la evaluación del modelo.
+•
+ ��Cómo aseguras la calidad de los datos en tus proyectos?
+•Implemento procesos rigurosos de limpieza de datos, incluyendo la 
+detección y corrección de valores atípicos, la imputación de datos 
+faltantes y la validación cruzada. Además, utilizo herramientas de 
+gestión de datos y técnicas de ETL para asegurar que los datos sean 
+precisos y consistentes.
+•
+ ��Qué tipo de problemas te gusta resolver con ciencia de datos?
+•Me apasiona resolver problemas que implican grandes volúmenes de datos 
+y que requieren análisis complejos para extraer insights valiosos. Esto 
+incluye la predicción de comportamientos del cliente, la detección de 
+fraudes y la optimización de procesos empresariales.
+•
+ ��Cómo manejas la privacidad y la ética en tus proyectos de datos?
+•Soy muy consciente de la importancia de la privacidad y la ética en el 
+manejo de datos. Siempre sigo las mejores prácticas y regulaciones 
+como GDPR, y aseguro que los datos sensibles estén protegidos 
+mediante técnicas de anonimización y cifrado cuando sea necesario.
+•
+��Estás trabajando en algún proyecto de creación de chatbots?
+•Sí, actualmente estoy incursionando en la creación de chatbots utilizando 
+ChatGPT de OpenAI. Estoy desarrollando un chatbot personalizado 
+que puede integrarse en páginas web para proporcionar respuestas 
+
+automatizadas y asistencia interactiva a los usuarios. Este proyecto 
+me ha permitido aplicar mis conocimientos

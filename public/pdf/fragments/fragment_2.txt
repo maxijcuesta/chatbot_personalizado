@@ -1,0 +1,56 @@
+c1
+
+•Data Scientist - <Calidad de Vinos>
+•Descripción: Se centra en el análisis de calidad de vino, teniendo en 
+cuenta dos dataset (vino tinto y vino blanco). 
+•Rol: Analista de Datos.
+•Tecnologías Utilizadas: Python, Pandas, Numpy, Matplotlib, Seaborn
+•Enlace: https://deepnote.com/workspace/maxijcuesta-24f98f3d-
+b68b-4750-a177-2dad5d8adf8a/project/Proyecto-Analisis-Exploratorio-
+de-Datos-Duplicate-3f587fc9-a9c2-4dec-8454-6519f45b7588/notebook/
+20d4dacbc4e14ac7819213fe8abf055b
+•Data Scientist - <Adult- Census >
+•Descripción: Se realizó el análisis exploratorio de datos y se construyó 
+modelos de Random Forest para predecir si una persona gana más de 
+50k dólares al año.
+•Rol: Data Scientist.
+•Tecnologías Utilizadas: Python, Pandas, Numpy, Matplotlib, 
+Seaborn,Sklearn
+•Enlace: https://github.com/maxijcuesta/Adult-Census
+•AI Specialist - < cocinAI> 
+•Desarrollador de CocinAI: Creé una plataforma web innovadora que 
+utiliza inteligencia artificial para generar recetas culinarias personalizadas 
+basadas en los ingredientes disponibles. Este proyecto, desplegado en 
+Vercel y construido con Next.js, muestra mis habilidades en programación 
+y la integración de API de IA, enfocándome en ofrecer soluciones prácticas 
+y creativas en el ��mbito culinario.
+•Rol: AI Specialist.
+•Tecnologías Utilizadas: Typescript, API de OpenAI
+•Enlace: https://cocinai-qxlntwb1l-maxi-cuestas-projects.vercel.app/
+
+Preguntas Frecuentes (FAQs)
+•
+��Qué experiencia tienes en Data Science?
+•Desde el año 2021que comencé con la carrera de Data Scientist que 
+comencé en análisis de datos, desarrollo de modelos predictivos y 
+optimización de algoritmos.
+•
+��Cuál es tu experiencia en la limpieza y preparación de datos?
+•He trabajado extensamente en la limpieza y preparación de datos, 
+incluyendo la identificación y corrección de datos faltantes o erróneos, 
+la normalización de datos y la transformación de datos para su uso en 
+modelos de aprendizaje automático.
+•
+��Cómo te mantienes actualizado con las ��ltimas tendencias y 
+tecnologías en ciencia de datos?
+•Me mantengo actualizado participando en cursos y certificaciones en 
+plataformas como Platzi y Microsoft Learn. Además, sigo blogs, 
+podcasts, y asisto a conferencias y webinars sobre ciencia de datos y 
+machine learning. Puedes ver algunos de mis cursos y certificaciones 
+aquí:
+•Platzi: https://platzi.com/p/maxijcuesta/
+•Microsoft Learn: https://learn.microsoft.com/es-mx/users/
+maxijcuesta
+•
+��Cuál es tu motivación y objetivo profesional a largo plazo?
+•A lo largo de mis 37 años, he acumulado 17 años de experiencia en la
