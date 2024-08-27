@@ -26,6 +26,48 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Estilos personalizados para el chatbot */
+.chatbot-container {
+  @apply fixed bottom-5 right-5 w-80 h-96 bg-white rounded-lg shadow-lg flex flex-col z-50;
+}
+
+.chatbot-header {
+  @apply bg-blue-600 text-white p-4 rounded-t-lg flex justify-between items-center;
+}
+
+.chatbot-messages {
+  @apply flex-grow p-4 overflow-y-auto bg-gray-100;
+}
+
+.chatbot-messages .user-message,
+.chatbot-messages .bot-message {
+  @apply p-3 my-2 rounded-lg max-w-[75%] text-sm leading-relaxed;
+}
+
+.chatbot-messages .user-message {
+  @apply bg-blue-600 text-white self-end;
+}
+
+.chatbot-messages .bot-message {
+  @apply bg-gray-300 text-black self-start;
+}
+
+.chatbot-input {
+  @apply flex p-4 bg-white border-t border-gray-200;
+}
+
+.chatbot-input input {
+  @apply flex-grow p-2 border rounded-lg mr-2;
+}
+
+.chatbot-input button {
+  @apply bg-blue-600 text-white p-2 rounded-full flex items-center justify-center w-10 h-10;
+}
+
+.chatbot-input button:hover {
+  @apply bg-blue-700;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
