@@ -3,12 +3,14 @@
 import { useState, useEffect } from 'react';
 
 export default function Home() {
-  const [isChatOpen, setIsChatOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
   const [question, setQuestion] = useState<string>('');
   const [pdfText, setPdfText] = useState<string>(''); 
   const [answer, setAnswer] = useState<string | null>(null);
-  const [conversation, setConversation] = useState<Array<{ sender: string, message: string }>>([]);
+  const [isChatOpen, setIsChatOpen] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [conversation, setConversation] = useState<
+    Array<{ sender: string; message: string }>
+  >([]);
 
   useEffect(() => {
     fetch('/pdf/mi_informacion.pdf')
@@ -18,11 +20,8 @@ export default function Home() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Agregar la pregunta al historial de la conversación
-    setConversation((prev) => [...prev, { sender: 'user', message: question }]);
-
-    setIsLoading(true); // Mostrar botón de cargando
+    setConversation([...conversation, { sender: 'user', message: question }]);
+    setIsLoading(true);
 
     const res = await fetch('/api/chat', {
       method: 'POST',
@@ -34,12 +33,9 @@ export default function Home() {
 
     const data = await res.json();
     setAnswer(data.answer || 'No se pudo obtener una respuesta.');
-
-    // Agregar la respuesta al historial de la conversación
-    setConversation((prev) => [...prev, { sender: 'bot', message: data.answer || 'No se pudo obtener una respuesta.' }]);
-    
-    setIsLoading(false); // Ocultar botón de cargando
-    setQuestion(''); // Limpiar el input de la pregunta
+    setIsLoading(false);
+    setConversation([...conversation, { sender: 'user', message: question }, { sender: 'bot', message: data.answer }]);
+    setQuestion('');
   };
 
   const handleReset = async () => {
@@ -60,67 +56,55 @@ export default function Home() {
   };
 
   return (
-    <div className="relative">
-      {/* Botón de Robot */}
+    <div>
+      {/* Botón de abrir/cerrar chatbot */}
       <button
         onClick={handleChatToggle}
-        className="fixed bottom-5 right-5 bg-[#25D366] p-4 rounded-full shadow-lg flex items-center justify-center"
+        className="fixed bottom-5 right-5 bg-green-500 p-4 rounded-full shadow-lg flex items-center justify-center"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 64 64"
-          fill="currentColor"
-          className="w-8 h-8 text-white"
-        >
-          <rect x="14" y="16" width="36" height="32" rx="8" ry="8" fill="white" stroke="#25D366" strokeWidth="2"/>
-          <circle cx="22" cy="30" r="6" fill="#25D366"/>
-          <circle cx="42" cy="30" r="6" fill="#25D366"/>
-          <rect x="24" y="42" width="16" height="6" rx="3" ry="3" fill="#25D366"/>
-          <path d="M14 20 L24 10 L34 20" stroke="#25D366" strokeWidth="2" fill="none"/> {/* Antena izquierda */}
-          <path d="M50 20 L40 10 L30 20" stroke="#25D366" strokeWidth="2" fill="none"/> {/* Antena derecha */}
-          <rect x="22" y="24" width="20" height="4" fill="#25D366"/> {/* Barra en la frente */}
-          <rect x="20" y="8" width="24" height="8" rx="4" ry="4" fill="#25D366"/>
-          <circle cx="32" cy="46" r="6" fill="#25D366"/>
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 0C3.589 0 0 3.589 0 8c0 4.411 3.589 8 8 8 4.411 0 8-3.589 8-8 0-4.411-3.589-8-8-8zM8 15C4.141 15 1 11.859 1 8 1 4.141 4.141 1 8 1c3.859 0 7 3.141 7 7C15 11.859 11.859 15 8 15z"></path>
+          <path d="M7 9h2v1H7zm0-1h2V5H7z"></path>
         </svg>
       </button>
 
       {/* Contenedor del Chatbot */}
       {isChatOpen && (
-        <div className="fixed bottom-20 right-5 w-80 h-[45rem] bg-black rounded-lg shadow-lg flex flex-col z-50">
+        <div className="fixed bottom-20 right-5 w-80 h-[35rem] bg-white rounded-lg shadow-lg flex flex-col z-50">
           <div className="chatbot-header bg-[#386DBD] text-white p-4 rounded-t-lg flex justify-between items-center">
             <h3>MaxiBOT</h3>
             <button onClick={handleChatToggle} className="text-white text-xl font-bold">×</button>
           </div>
           <div id="chatbotMessages" className="chatbot-messages flex-grow p-4 overflow-y-auto bg-gray-100 text-black">
-          Hola, soy tu asistente personal con IA. 🤖 Puedes consultarme cualquier duda que tengas sobre Maxi. Todavía estoy aprendiendo, así que a veces puedo cometer errores.
+            Hola, soy tu asistente personal con IA. 🤖 Puedes consultarme cualquier duda que tengas sobre Maxi. Todavía estoy aprendiendo, así que a veces puedo cometer errores.
               <br /><br />
               ¿Qué preguntas tienes?
             {conversation.map((msg, index) => (
               <div
                 key={index}
                 className={`p-2 rounded-lg mb-2 ${
-                  msg.sender === 'user' ? 'bg-[#386DBD] text-right ml-auto text-white' : 'bg-gray-300 text-black'
+                  msg.sender === 'user' ? 'bg-[#386DBD] text-white text-right' : 'bg-gray-300 text-black'
                 }`}
               >
                 {msg.message}
               </div>
             ))}
           </div>
-          <div className="chatbot-input flex p-4 bg-black border-t border-gray-200">
+          <div className="chatbot-input flex p-4 bg-gray-200 border-t border-gray-300">
             <input
               type="text"
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
-              placeholder="Escribe tu pregunta sobre Maxi"
+              placeholder="Escribe tu pregunta sobre Maxi..."
               className="flex-grow p-2 border rounded-lg mr-2 text-black"
             />
             <button
               onClick={handleSubmit}
-              className="bg-blue-600 text-black p-2 rounded-full flex items-center justify-center w-10 h-10"
+              className="bg-[#386DBD] text-white p-2 rounded-full flex items-center justify-center w-10 h-10"
             >
               {isLoading ? (
                 <svg
-                  className="animate-spin h-5 w-5 text-black"
+                  className="animate-spin h-5 w-5 text-white"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
